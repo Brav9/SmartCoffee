@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/ivCoktail"
+        android:id="@+id/ivCocktail"
         android:layout_width="163dp"
         android:layout_height="152dp"
         app:srcCompat="@drawable/cocktail"
@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivCake"
         android:layout_width="151dp"
         android:layout_height="149dp"
         app:srcCompat="@drawable/cake"
@@ -24,7 +24,7 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivIce"
         android:layout_width="181dp"
         android:layout_height="184dp"
         app:srcCompat="@drawable/ice"
@@ -32,7 +32,7 @@
         tools:layout_editor_absoluteY="178dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/ivLemonade"
         android:layout_width="175dp"
         android:layout_height="182dp"
         app:srcCompat="@drawable/lemonade"
