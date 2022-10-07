@@ -6,45 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="206dp" />
 
     <ImageView
         android:id="@+id/ivCocktail"
-        android:layout_width="163dp"
-        android:layout_height="152dp"
-        app:srcCompat="@drawable/cocktail"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cocktail" />
 
     <ImageView
         android:id="@+id/ivCake"
-        android:layout_width="151dp"
-        android:layout_height="149dp"
-        app:srcCompat="@drawable/cake"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="138dp"
+        android:layout_height="143dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivCocktail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cake" />
 
     <ImageView
         android:id="@+id/ivIce"
-        android:layout_width="181dp"
-        android:layout_height="184dp"
-        app:srcCompat="@drawable/ice"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="178dp" />
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCocktail"
+        app:srcCompat="@drawable/ice" />
 
     <ImageView
         android:id="@+id/ivLemonade"
-        android:layout_width="175dp"
-        android:layout_height="182dp"
-        app:srcCompat="@drawable/lemonade"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="180dp" />
+        android:layout_width="140dp
+"
+        android:layout_height="140dp
+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivIce"
+        app:layout_constraintTop_toBottomOf="@+id/ivCake"
+        app:srcCompat="@drawable/lemonade" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="410dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivIce" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
