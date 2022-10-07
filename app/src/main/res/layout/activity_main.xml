@@ -6,57 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="206dp" />
-
-    <ImageView
-        android:id="@+id/ivCocktail"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cocktail" />
-
-    <ImageView
-        android:id="@+id/ivCake"
-        android:layout_width="138dp"
-        android:layout_height="143dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivCocktail"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cake" />
-
-    <ImageView
-        android:id="@+id/ivIce"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivCocktail"
-        app:srcCompat="@drawable/ice" />
-
-    <ImageView
-        android:id="@+id/ivLemonade"
-        android:layout_width="140dp
-"
-        android:layout_height="140dp
-"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivIce"
-        app:layout_constraintTop_toBottomOf="@+id/ivCake"
-        app:srcCompat="@drawable/lemonade" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivIce" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
