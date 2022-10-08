@@ -8,5 +8,54 @@
         android:id="@+id/startFragment2"
         android:name="com.hfad.smartcoffee.StartFragment"
         android:label="fragment_start"
-        tools:layout="@layout/fragment_start" />
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment2_to_cocktailFragment"
+            app:destination="@id/cocktailFragment" />
+        <action
+            android:id="@+id/action_startFragment2_to_iceFragment"
+            app:destination="@id/iceFragment" />
+        <action
+            android:id="@+id/action_startFragment2_to_cakeFragment"
+            app:destination="@id/cakeFragment" />
+        <action
+            android:id="@+id/action_startFragment2_to_coffeeFragment2"
+            app:destination="@id/coffeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cocktailFragment"
+        android:name="com.hfad.smartcoffee.CocktailFragment"
+        android:label="fragment_cocktail"
+        tools:layout="@layout/fragment_cocktail" >
+        <action
+            android:id="@+id/action_cocktailFragment_to_startFragment2"
+            app:destination="@id/startFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/cakeFragment"
+        android:name="com.hfad.smartcoffee.CakeFragment"
+        android:label="fragment_cake"
+        tools:layout="@layout/fragment_cake" >
+        <action
+            android:id="@+id/action_cakeFragment_to_startFragment2"
+            app:destination="@id/startFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/coffeeFragment"
+        android:name="com.hfad.smartcoffee.CoffeeFragment"
+        android:label="fragment_coffee"
+        tools:layout="@layout/fragment_coffee" >
+        <action
+            android:id="@+id/action_coffeeFragment_to_startFragment2"
+            app:destination="@id/startFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/iceFragment"
+        android:name="com.hfad.smartcoffee.IceFragment"
+        android:label="fragment_ice"
+        tools:layout="@layout/fragment_ice" >
+        <action
+            android:id="@+id/action_iceFragment_to_startFragment2"
+            app:destination="@id/startFragment2" />
+    </fragment>
 </navigation>
