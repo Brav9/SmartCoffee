@@ -7,7 +7,7 @@
     tools:context=".CocktailFragment">
 
     <ImageView
-        android:id="@+id/imCoffee"
+        android:id="@+id/imIce"
         android:layout_width="0dp"
         android:layout_height="300dp"
         android:src="@drawable/cocktail"
@@ -24,7 +24,7 @@
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imCoffee"
+        app:layout_constraintTop_toBottomOf="@+id/imIce"
         app:textAllCaps="false" />
 
     <Button
