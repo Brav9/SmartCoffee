@@ -19,12 +19,12 @@
         android:id="@+id/tvQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/quantity"
         android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnQuantityOne"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imProduct"
         app:textAllCaps="false" />
 
     <Button
@@ -32,39 +32,39 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/one"
         app:backgroundTint="#AA774C"
+        app:layout_constraintBottom_toTopOf="@+id/btnQuantityTwo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuantity" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnQuantityTwo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/two"
         app:backgroundTint="#AA774C"
+        app:layout_constraintBottom_toTopOf="@+id/btnQuantityTree"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnQuantityOne" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnQuantityTree"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/three"
         app:backgroundTint="#AA774C"
+        app:layout_constraintBottom_toTopOf="@+id/btnOrderCancellation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnQuantityTwo" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnOrderCancellation"
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/order_cancellation"
         app:backgroundTint="#42A7EA"
         app:layout_constraintBottom_toBottomOf="parent"
