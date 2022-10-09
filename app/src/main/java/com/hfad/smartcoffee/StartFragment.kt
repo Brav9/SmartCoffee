@@ -22,6 +22,8 @@ class StartFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_start, container, false)
     }
 
+
+
     fun orderProduct() {
         findNavController().navigate(R.id.action_startFragment2_to_cakeFragment)
     }

@@ -10,6 +10,10 @@
     <string name="three">3</string>
     <string name="order_cancellation">Отмена заказа</string>
     <string name="pickup_date">Дата доставки</string>
+    <string name="coffee">Кофе</string>
+    <string name="ice">Мороженое</string>
+    <string name="cocktail">Лимонад</string>
+    <string name="cake">Торт</string>
 
 
 </resources>
