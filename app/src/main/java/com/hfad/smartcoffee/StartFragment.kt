@@ -32,8 +32,10 @@ class StartFragment : Fragment() {
         binding?.startFragment = this
     }
 
-    fun orderProduct() {
-        findNavController().navigate(R.id.action_startFragment2_to_cakeFragment)
-
+    fun orderProduct(number: Int) {
+        if (number == 1) findNavController().navigate(R.id.action_startFragment2_to_cocktailFragment)
+        if (number == 2) findNavController().navigate(R.id.action_startFragment2_to_iceFragment)
+        if (number == 3) findNavController().navigate(R.id.action_startFragment2_to_cakeFragment)
+        if (number == 4) findNavController().navigate(R.id.action_startFragment2_to_coffeeFragment2)
     }
 }
