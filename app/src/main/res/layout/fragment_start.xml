@@ -84,6 +84,7 @@
             android:layout_marginBottom="8dp"
             android:onClick="@{() -> startFragment.orderProduct(1)}"
             android:text="@string/cocktail"
+            app:backgroundTint="#42A7EA"
             app:layout_constraintBottom_toTopOf="@+id/btnIce"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -97,6 +98,7 @@
             android:layout_marginBottom="8dp"
             android:onClick="@{() -> startFragment.orderProduct(2)}"
             android:text="@string/ice"
+            app:backgroundTint="#42A7EA"
             app:layout_constraintBottom_toTopOf="@+id/btnCake"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -110,6 +112,7 @@
             android:layout_marginBottom="8dp"
             android:onClick="@{() -> startFragment.orderProduct(3)}"
             android:text="@string/cake"
+            app:backgroundTint="#42A7EA"
             app:layout_constraintBottom_toTopOf="@+id/btnCoffee"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -123,6 +126,7 @@
             android:layout_marginBottom="16dp"
             android:onClick="@{() -> startFragment.orderProduct(4)}"
             android:text="@string/coffee"
+            app:backgroundTint="#42A7EA"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
