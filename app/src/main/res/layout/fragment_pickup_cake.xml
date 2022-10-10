@@ -19,12 +19,12 @@
         android:id="@+id/tvQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/pickup_date"
         android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/date_options"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imProduct"
         app:textAllCaps="false" />
 
     <Button
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/order_cancellation"
         app:backgroundTint="#42A7EA"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,10 +44,10 @@
         android:id="@+id/date_options"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuantity">
+        app:layout_constraintBottom_toTopOf="@+id/btnOrderCancellation"
+        app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
             android:id="@+id/option0"
