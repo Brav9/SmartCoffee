@@ -32,4 +32,8 @@ class CoffeeFragment : Fragment() {
     fun goToNextScreen() {
         findNavController().navigate(R.id.action_coffeeFragment_to_pickupCoffeeFragment)
     }
+
+    fun orderCancellation(){
+        findNavController().navigate(R.id.action_coffeeFragment_to_startFragment2)
+    }
 }
