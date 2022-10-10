@@ -31,4 +31,8 @@ class CakeFragment : Fragment() {
     fun goToNextScreen() {
         findNavController().navigate(R.id.action_cakeFragment_to_pickupCakeFragment)
     }
+
+    fun orderCancellation(){
+        findNavController().navigate(R.id.action_cakeFragment_to_startFragment2)
+    }
 }
