@@ -31,4 +31,8 @@ class CocktailFragment : Fragment() {
     fun goToNextScreen() {
         findNavController().navigate(R.id.action_cocktailFragment_to_pickupCocktailFragment)
     }
+
+    fun orderCancellation(){
+        findNavController().navigate(R.id.action_cocktailFragment_to_startFragment2)
+    }
 }
