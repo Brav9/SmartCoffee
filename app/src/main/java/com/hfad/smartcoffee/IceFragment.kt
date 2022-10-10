@@ -32,4 +32,8 @@ class IceFragment : Fragment() {
     fun goToNextScreen() {
         findNavController().navigate(R.id.action_iceFragment_to_pickupIceFragment)
     }
+
+    fun orderCancellation(){
+        findNavController().navigate(R.id.action_iceFragment_to_startFragment2)
+    }
 }
