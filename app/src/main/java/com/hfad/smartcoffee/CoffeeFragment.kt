@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.hfad.smartcoffee.databinding.FragmentCocktailBinding
 import com.hfad.smartcoffee.databinding.FragmentCoffeeBinding
 
 
