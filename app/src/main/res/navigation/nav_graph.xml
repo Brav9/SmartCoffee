@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/startFragment2"
         android:name="com.hfad.smartcoffee.StartFragment"
-        android:label="fragment_start"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_start" >
         <action
             android:id="@+id/action_startFragment2_to_cocktailFragment"
@@ -25,7 +25,7 @@
     <fragment
         android:id="@+id/cocktailFragment"
         android:name="com.hfad.smartcoffee.CocktailFragment"
-        android:label="fragment_cocktail"
+        android:label="@string/choose_quantity_cocktail"
         tools:layout="@layout/fragment_cocktail" >
         <action
             android:id="@+id/action_cocktailFragment_to_startFragment2"
@@ -37,7 +37,7 @@
     <fragment
         android:id="@+id/cakeFragment"
         android:name="com.hfad.smartcoffee.CakeFragment"
-        android:label="fragment_cake"
+        android:label="@string/choose_quantity_cake"
         tools:layout="@layout/fragment_cake" >
         <action
             android:id="@+id/action_cakeFragment_to_startFragment2"
@@ -49,7 +49,7 @@
     <fragment
         android:id="@+id/coffeeFragment"
         android:name="com.hfad.smartcoffee.CoffeeFragment"
-        android:label="fragment_coffee"
+        android:label="@string/choose_quantity_coffee"
         tools:layout="@layout/fragment_coffee" >
         <action
             android:id="@+id/action_coffeeFragment_to_startFragment2"
@@ -61,7 +61,7 @@
     <fragment
         android:id="@+id/iceFragment"
         android:name="com.hfad.smartcoffee.IceFragment"
-        android:label="fragment_ice"
+        android:label="@string/choose_quantity_ice"
         tools:layout="@layout/fragment_ice" >
         <action
             android:id="@+id/action_iceFragment_to_startFragment2"

@@ -14,6 +14,10 @@
     <string name="ice">Мороженое</string>
     <string name="cocktail">Лимонад</string>
     <string name="cake">Торт</string>
+    <string name="choose_quantity_cocktail">Ваш выбор лимонад</string>
+    <string name="choose_quantity_cake">Ваш выбор торт</string>
+    <string name="choose_quantity_coffee">Ваш выбор кофе</string>
+    <string name="choose_quantity_ice">Ваш выбор мороженное</string>
 
 
 </resources>
