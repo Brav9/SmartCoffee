@@ -73,7 +73,7 @@
     <fragment
         android:id="@+id/pickupCakeFragment"
         android:name="com.hfad.smartcoffee.PickupCakeFragment"
-        android:label="fragment_pickup_cake"
+        android:label="@string/choose_quantity_cake"
         tools:layout="@layout/fragment_pickup_cake" >
         <action
             android:id="@+id/action_pickupCakeFragment_to_startFragment2"
@@ -82,7 +82,7 @@
     <fragment
         android:id="@+id/pickupCocktailFragment"
         android:name="com.hfad.smartcoffee.PickupCocktailFragment"
-        android:label="fragment_pickup_cocktail"
+        android:label="@string/choose_quantity_cocktail"
         tools:layout="@layout/fragment_pickup_cocktail" >
         <action
             android:id="@+id/action_pickupCocktailFragment_to_startFragment2"
@@ -91,7 +91,7 @@
     <fragment
         android:id="@+id/pickupCoffeeFragment"
         android:name="com.hfad.smartcoffee.PickupCoffeeFragment"
-        android:label="fragment_pickup_coffee"
+        android:label="@string/choose_quantity_coffee"
         tools:layout="@layout/fragment_pickup_coffee" >
         <action
             android:id="@+id/action_pickupCoffeeFragment_to_startFragment2"
@@ -100,7 +100,7 @@
     <fragment
         android:id="@+id/pickupIceFragment"
         android:name="com.hfad.smartcoffee.PickupIceFragment"
-        android:label="fragment_pickup_ice"
+        android:label="@string/choose_quantity_ice"
         tools:layout="@layout/fragment_pickup_ice" >
         <action
             android:id="@+id/action_pickupIceFragment_to_startFragment2"
