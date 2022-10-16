@@ -78,6 +78,9 @@
         <action
             android:id="@+id/action_pickupCakeFragment_to_startFragment2"
             app:destination="@id/startFragment2" />
+        <action
+            android:id="@+id/action_pickupCakeFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
     </fragment>
     <fragment
         android:id="@+id/pickupCocktailFragment"
@@ -87,6 +90,9 @@
         <action
             android:id="@+id/action_pickupCocktailFragment_to_startFragment2"
             app:destination="@id/startFragment2" />
+        <action
+            android:id="@+id/action_pickupCocktailFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
     </fragment>
     <fragment
         android:id="@+id/pickupCoffeeFragment"
@@ -96,6 +102,9 @@
         <action
             android:id="@+id/action_pickupCoffeeFragment_to_startFragment2"
             app:destination="@id/startFragment2" />
+        <action
+            android:id="@+id/action_pickupCoffeeFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
     </fragment>
     <fragment
         android:id="@+id/pickupIceFragment"
@@ -104,6 +113,17 @@
         tools:layout="@layout/fragment_pickup_ice" >
         <action
             android:id="@+id/action_pickupIceFragment_to_startFragment2"
+            app:destination="@id/startFragment2" />
+        <action
+            android:id="@+id/action_pickupIceFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.hfad.smartcoffee.SummaryFragment"
+        android:label="SummaryFragment" >
+        <action
+            android:id="@+id/action_summaryFragment_to_startFragment2"
             app:destination="@id/startFragment2" />
     </fragment>
 </navigation>

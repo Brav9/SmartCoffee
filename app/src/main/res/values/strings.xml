@@ -18,6 +18,7 @@
     <string name="choose_quantity_cake">Ваш выбор торт</string>
     <string name="choose_quantity_coffee">Ваш выбор кофе</string>
     <string name="choose_quantity_ice">Ваш выбор мороженное</string>
+    <string name="product">Товар</string>
 
 
 </resources>
