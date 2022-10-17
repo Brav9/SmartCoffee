@@ -19,6 +19,7 @@
     <string name="choose_quantity_coffee">Ваш выбор кофе</string>
     <string name="choose_quantity_ice">Ваш выбор мороженное</string>
     <string name="product">Товар</string>
-
+    <string name="date">Дата доставки</string>
+    <string name="send">Отправить заказ</string>
 
 </resources>
