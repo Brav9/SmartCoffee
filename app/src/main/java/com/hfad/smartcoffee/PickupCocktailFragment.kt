@@ -29,7 +29,7 @@ class PickupCocktailFragment : Fragment() {
     }
 
     fun goToNextScreen() {
-
+findNavController().navigate(R.id.action_pickupCocktailFragment_to_summaryFragment)
     }
 
     fun orderCancellation(){
