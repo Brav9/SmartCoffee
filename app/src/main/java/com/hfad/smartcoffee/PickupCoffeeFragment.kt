@@ -30,10 +30,10 @@ class PickupCoffeeFragment : Fragment() {
     }
 
     fun goToNextScreen() {
-
+        findNavController().navigate(R.id.action_pickupCoffeeFragment_to_summaryFragment)
     }
 
-    fun orderCancellation(){
+    fun orderCancellation() {
         findNavController().navigate(R.id.action_pickupCoffeeFragment_to_startFragment2)
     }
 }
