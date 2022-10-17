@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-<variable
-    name="pickupIceFragment"
-    type="com.hfad.smartcoffee.PickupIceFragment" />
+
+        <variable
+            name="pickupIceFragment"
+            type="com.hfad.smartcoffee.PickupIceFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -50,10 +51,10 @@
             android:id="@+id/btnOrderCancellation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:onClick="@{() -> pickupIceFragment.orderCancellation()}"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:onClick="@{() -> pickupIceFragment.orderCancellation()}"
             android:text="@string/order_cancellation"
             app:backgroundTint="#42A7EA"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -73,17 +74,20 @@
             <RadioButton
                 android:id="@+id/option0"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> pickupIceFragment.goToNextScreen()}" />
 
             <RadioButton
                 android:id="@+id/option1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> pickupIceFragment.goToNextScreen()}" />
 
             <RadioButton
                 android:id="@+id/option2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> pickupIceFragment.goToNextScreen()}" />
 
         </RadioGroup>
 

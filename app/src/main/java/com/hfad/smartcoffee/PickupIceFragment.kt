@@ -30,7 +30,7 @@ class PickupIceFragment : Fragment() {
     }
 
     fun goToNextScreen() {
-
+        findNavController().navigate(R.id.action_pickupIceFragment_to_summaryFragment)
     }
 
     fun orderCancellation(){
