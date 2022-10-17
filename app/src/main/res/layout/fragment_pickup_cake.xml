@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-<variable
-    name="pickupCakeFragment"
-    type="com.hfad.smartcoffee.PickupCakeFragment" />
+
+        <variable
+            name="pickupCakeFragment"
+            type="com.hfad.smartcoffee.PickupCakeFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,12 +28,12 @@
             android:id="@+id/subtotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Subtotal $10.00"
-            android:textSize="30sp"
             android:layout_marginTop="32dp"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imProduct" />
+            app:layout_constraintTop_toBottomOf="@+id/imProduct"
+            tools:text="Subtotal $10.00" />
 
         <TextView
             android:id="@+id/tvQuantity"
@@ -50,10 +51,10 @@
             android:id="@+id/btnOrderCancellation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:onClick="@{() -> pickupCakeFragment.orderCancellation()}"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:onClick="@{() -> pickupCakeFragment.orderCancellation()}"
             android:text="@string/order_cancellation"
             app:backgroundTint="#42A7EA"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -73,18 +74,20 @@
             <RadioButton
                 android:id="@+id/option0"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> pickupCakeFragment.goToNextScreen()}" />
 
             <RadioButton
                 android:id="@+id/option1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> pickupCakeFragment.goToNextScreen()}" />
 
             <RadioButton
                 android:id="@+id/option2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> pickupCakeFragment.goToNextScreen()}" />
 
         </RadioGroup>
 

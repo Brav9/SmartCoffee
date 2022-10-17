@@ -30,6 +30,7 @@ class PickupCakeFragment : Fragment() {
     }
 
     fun goToNextScreen() {
+        findNavController().navigate(R.id.action_pickupCakeFragment_to_summaryFragment)
 
     }
 
