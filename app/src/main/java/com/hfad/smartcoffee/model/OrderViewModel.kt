@@ -6,6 +6,11 @@ import androidx.lifecycle.ViewModel
 import java.text.SimpleDateFormat
 import java.util.*
 
+private const val PRICE_ONE_CAKE = 220.00
+private const val PRICE_ONE_COCKTAIL = 120.00
+private const val PRICE_ONE_COFFEE = 180.00
+private const val PRICE_ONE_ICE = 190.00
+
 class OrderViewModel : ViewModel() {
 
     private val _product = MutableLiveData<String>()
