@@ -28,6 +28,10 @@ class OrderViewModel : ViewModel() {
 
     val dateOptions = getPickupOptions()
 
+    init {
+        resetOrder()
+    }
+
     private fun getPickupOptions(): List<String> {
         val options = mutableListOf<String>()
         val formatter = SimpleDateFormat("E MMM d", Locale.getDefault())
