@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-<variable
-    name="startFragment"
-    type="com.hfad.smartcoffee.StartFragment" />
+
+        <variable
+            name="startFragment"
+            type="com.hfad.smartcoffee.StartFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -82,7 +83,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
-            android:onClick="@{() -> startFragment.orderProduct(1)}"
+            android:onClick="@{() -> startFragment.orderProduct(@string/cocktail)}"
+
             android:text="@string/cocktail"
             app:backgroundTint="#42A7EA"
             app:layout_constraintBottom_toTopOf="@+id/btnIce"
@@ -96,7 +98,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
-            android:onClick="@{() -> startFragment.orderProduct(2)}"
+            android:onClick="@{() -> startFragment.orderProduct(@string/ice)}"
+
             android:text="@string/ice"
             app:backgroundTint="#42A7EA"
             app:layout_constraintBottom_toTopOf="@+id/btnCake"
@@ -110,7 +113,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
-            android:onClick="@{() -> startFragment.orderProduct(3)}"
+            android:onClick="@{() -> startFragment.orderProduct(@string/cake)}"
+
             android:text="@string/cake"
             app:backgroundTint="#42A7EA"
             app:layout_constraintBottom_toTopOf="@+id/btnCoffee"
@@ -124,7 +128,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:onClick="@{() -> startFragment.orderProduct(4)}"
+            android:onClick="@{() -> startFragment.orderProduct(@string/coffee)}"
+
             android:text="@string/coffee"
             app:backgroundTint="#42A7EA"
             app:layout_constraintBottom_toBottomOf="parent"

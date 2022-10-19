@@ -26,10 +26,30 @@ class OrderViewModel : ViewModel() {
     private val _price = MutableLiveData<Double>()
     val price: LiveData<Double> = _price
 
-    val dateOptions = getPickupOptions()
+    private val dateOptions = getPickupOptions()
 
     init {
         resetOrder()
+    }
+
+    fun setProduct(nameProduct: String) {
+        _product.value = nameProduct
+        updatePrice()
+    }
+
+    fun setQuantity(numberCupcakes: Int) {
+        _quantity.value = numberCupcakes
+        updatePrice()
+    }
+
+    fun setDate(pickupDate: String) {
+        _date.value = pickupDate
+        updatePrice()
+    }
+
+    private fun updatePrice() {
+        var calculatedPriceCake = (quantity.value ?: 0) * PRICE_ONE_CAKE
+       if (_product.value!== "Торт")
     }
 
     private fun getPickupOptions(): List<String> {
@@ -43,7 +63,7 @@ class OrderViewModel : ViewModel() {
         return options
     }
 
-    fun resetOrder() {
+    private fun resetOrder() {
         _product.value = ""
         _quantity.value = 0
         _date.value = dateOptions[0]

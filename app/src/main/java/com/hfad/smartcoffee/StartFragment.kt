@@ -5,14 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.hfad.smartcoffee.databinding.FragmentStartBinding
+import com.hfad.smartcoffee.model.OrderViewModel
 
 
 class StartFragment : Fragment() {
 
     private var binding: FragmentStartBinding? = null
-
+    private val sharedViewModel: OrderViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,10 +30,11 @@ class StartFragment : Fragment() {
         binding?.startFragment = this
     }
 
-    fun orderProduct(number: Int) {
-        if (number == 1) findNavController().navigate(R.id.action_startFragment2_to_cocktailFragment)
-        if (number == 2) findNavController().navigate(R.id.action_startFragment2_to_iceFragment)
-        if (number == 3) findNavController().navigate(R.id.action_startFragment2_to_cakeFragment)
-        if (number == 4) findNavController().navigate(R.id.action_startFragment2_to_coffeeFragment2)
+    fun orderProduct(name: String) {
+        sharedViewModel.setProduct(name)
+        if (name == "Лимонад") findNavController().navigate(R.id.action_startFragment2_to_cocktailFragment)
+        if (name == "Мороженое") findNavController().navigate(R.id.action_startFragment2_to_iceFragment)
+        if (name == "Торт") findNavController().navigate(R.id.action_startFragment2_to_cakeFragment)
+        if (name == "Кофе") findNavController().navigate(R.id.action_startFragment2_to_coffeeFragment2)
     }
 }
