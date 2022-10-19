@@ -10,6 +10,7 @@ private const val PRICE_ONE_CAKE = 220.00
 private const val PRICE_ONE_COCKTAIL = 120.00
 private const val PRICE_ONE_COFFEE = 180.00
 private const val PRICE_ONE_ICE = 190.00
+private const val PRICE_FOR_SOME_DAY_PICKUP = 100.00
 
 class OrderViewModel : ViewModel() {
 
