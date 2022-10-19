@@ -38,4 +38,11 @@ class OrderViewModel : ViewModel() {
         }
         return options
     }
+
+    fun resetOrder() {
+        _product.value = ""
+        _quantity.value = 0
+        _date.value = dateOptions[0]
+        _price.value = 0.00
+    }
 }
