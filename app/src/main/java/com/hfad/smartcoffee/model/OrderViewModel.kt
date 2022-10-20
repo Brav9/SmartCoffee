@@ -49,8 +49,20 @@ class OrderViewModel : ViewModel() {
 
     private fun updatePrice() {
         var calculatedPriceCake = (quantity.value ?: 0) * PRICE_ONE_CAKE
-       if (_product.value!== "Торт")
+        var calculatedPriceCocktail = (quantity.value ?: 0) * PRICE_ONE_COCKTAIL
+        var calculatedPriceCoffee = (quantity.value ?: 0) * PRICE_ONE_COFFEE
+        var calculatedPriceIce = (quantity.value ?: 0) * PRICE_ONE_ICE
+
+        if (_product.value == "Лимонад") {
+
+        }
+        _price.value = calculatedPriceCocktail
+        if () {
+
+        }
+
     }
+
 
     private fun getPickupOptions(): List<String> {
         val options = mutableListOf<String>()
