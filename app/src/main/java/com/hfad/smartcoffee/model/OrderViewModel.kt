@@ -26,7 +26,7 @@ class OrderViewModel : ViewModel() {
     private val _price = MutableLiveData<Double>()
     val price: LiveData<Double> = _price
 
-    private val dateOptions = getPickupOptions()
+     val dateOptions = getPickupOptions()
 
     init {
         resetOrder()
@@ -57,9 +57,7 @@ class OrderViewModel : ViewModel() {
 
         }
         _price.value = calculatedPriceCocktail
-        if () {
 
-        }
 
     }
 
@@ -75,7 +73,7 @@ class OrderViewModel : ViewModel() {
         return options
     }
 
-    private fun resetOrder() {
+    fun resetOrder() {
         _product.value = ""
         _quantity.value = 0
         _date.value = dateOptions[0]
