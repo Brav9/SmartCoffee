@@ -32,7 +32,8 @@ class CakeFragment : Fragment() {
         binding?.cakeFragment = this@CakeFragment
     }
 
-    fun goToNextScreen() {
+    fun quantityCake(quantity: Int) {
+        sharedViewModel.setQuantity(quantity)
         findNavController().navigate(R.id.action_cakeFragment_to_pickupCakeFragment)
     }
 
