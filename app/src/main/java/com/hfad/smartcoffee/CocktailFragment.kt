@@ -31,7 +31,8 @@ class CocktailFragment : Fragment() {
         binding?.cocktailFragment = this@CocktailFragment
     }
 
-    fun goToNextScreen() {
+    fun quantityCake(quantity: Int) {
+        sharedViewModel.setQuantity(quantity)
         findNavController().navigate(R.id.action_cocktailFragment_to_pickupCocktailFragment)
     }
 
