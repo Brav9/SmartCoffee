@@ -5,14 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.hfad.smartcoffee.databinding.FragmentCoffeeBinding
 import com.hfad.smartcoffee.databinding.FragmentIceBinding
+import com.hfad.smartcoffee.model.OrderViewModel
 
 
 class IceFragment : Fragment() {
 
     private var binding: FragmentIceBinding? = null
+    private val sharedViewModel: OrderViewModel by activityViewModels()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,7 +33,8 @@ class IceFragment : Fragment() {
         binding?.iceFragment = this@IceFragment
     }
 
-    fun goToNextScreen() {
+    fun quantityCake(quantity: Int) {
+        sharedViewModel.setQuantity(quantity)
         findNavController().navigate(R.id.action_iceFragment_to_pickupIceFragment)
     }
 
