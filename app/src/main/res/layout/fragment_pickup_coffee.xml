@@ -8,6 +8,10 @@
         <variable
             name="pickupCoffeeFragment"
             type="com.hfad.smartcoffee.PickupCoffeeFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.hfad.smartcoffee.model.OrderViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -75,19 +79,25 @@
                 android:id="@+id/option0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="@{() -> pickupCoffeeFragment.goToNextScreen()}" />
+                android:checked="@{viewModel.date.equals(viewModel.dateOptions[0])}"
+                android:onClick="@{() -> pickupCoffeeFragment.goToNextScreen()}"
+                android:text="@{viewModel.dateOptions[0]}" />
 
             <RadioButton
                 android:id="@+id/option1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="@{() -> pickupCoffeeFragment.goToNextScreen()}" />
+                android:checked="@{viewModel.date.equals(viewModel.dateOptions[1])}"
+                android:onClick="@{() -> pickupCoffeeFragment.goToNextScreen()}"
+                android:text="@{viewModel.dateOptions[1]}" />
 
             <RadioButton
                 android:id="@+id/option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="@{() -> pickupCoffeeFragment.goToNextScreen()}" />
+                android:checked="@{viewModel.date.equals(viewModel.dateOptions[2])}"
+                android:onClick="@{() -> pickupCoffeeFragment.goToNextScreen()}"
+                android:text="@{viewModel.dateOptions[2]}" />
 
 
         </RadioGroup>
