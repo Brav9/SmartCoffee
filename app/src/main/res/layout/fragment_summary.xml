@@ -7,6 +7,9 @@
         <variable
             name="summaryFragment"
             type="com.hfad.smartcoffee.SummaryFragment" />
+        <variable
+            name="viewModel"
+            type="com.hfad.smartcoffee.model.OrderViewModel" />
     </data>
 
     <LinearLayout
