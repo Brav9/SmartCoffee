@@ -21,5 +21,6 @@
     <string name="product">Товар</string>
     <string name="date">Дата доставки</string>
     <string name="send">Отправить заказ</string>
+    <string name="Next">Итоговый выбор</string>
 
 </resources>

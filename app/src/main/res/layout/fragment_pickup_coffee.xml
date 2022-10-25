@@ -65,14 +65,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <Button
+            android:id="@+id/btnNextScreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="@{() -> pickupCoffeeFragment.goToNextScreen()}"
+            android:text="@string/Next"
+            app:backgroundTint="#42A7EA"
+            app:layout_constraintBottom_toTopOf="@+id/btnOrderCancellation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
         <RadioGroup
             android:id="@+id/date_options"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="16dp"
             android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/btnOrderCancellation"
+            app:layout_constraintBottom_toTopOf="@+id/btnNextScreen"
             app:layout_constraintStart_toStartOf="parent">
 
             <RadioButton
@@ -80,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="@{viewModel.date.equals(viewModel.dateOptions[0])}"
-                android:onClick="@{() -> pickupCoffeeFragment.goToNextScreen()}"
+                android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[0])}"
                 android:text="@{viewModel.dateOptions[0]}" />
 
             <RadioButton
@@ -88,15 +101,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="@{viewModel.date.equals(viewModel.dateOptions[1])}"
-                android:onClick="@{() -> pickupCoffeeFragment.goToNextScreen()}"
+                android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[1])}"
                 android:text="@{viewModel.dateOptions[1]}" />
 
             <RadioButton
                 android:id="@+id/option2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:checked="@{viewModel.date.equals(viewModel.dateOptions[2])}"
-                android:onClick="@{() -> pickupCoffeeFragment.goToNextScreen()}"
+                android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[2])}"
                 android:text="@{viewModel.dateOptions[2]}" />
 
 
