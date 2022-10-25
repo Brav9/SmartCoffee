@@ -7,6 +7,7 @@
         <variable
             name="summaryFragment"
             type="com.hfad.smartcoffee.SummaryFragment" />
+
         <variable
             name="viewModel"
             type="com.hfad.smartcoffee.model.OrderViewModel" />
@@ -40,8 +41,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:textSize="20sp"
-                tools:text="Кофе" />
+                android:text="@{viewModel.product}"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/quantity_label"
@@ -57,8 +58,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:textSize="20sp"
-                tools:text="4" />
+                android:text="@{viewModel.quantity.toString()}"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/date_label"
@@ -74,8 +75,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:textSize="20sp"
-                tools:text="4.11.2020" />
+                android:text="@{viewModel.date}"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/total"
@@ -92,8 +93,8 @@
             android:id="@+id/send_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-                android:text="@string/send"
-            android:layout_gravity="bottom"/>
+            android:layout_gravity="bottom"
+            android:text="@string/send" />
 
         <Button
             android:id="@+id/cancel_button"
@@ -101,7 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-
+            android:onClick="@{() -> summaryFragment.orderCancellation()}"
             android:text="@string/order_cancellation" />
 
     </LinearLayout>
